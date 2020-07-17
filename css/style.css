@@ -2,15 +2,27 @@
 body {
   margin: 0px;
   font-family: "Poppins", sans-serif;
-  background-color: #8f57fd;
+background-image: url('../img/diseno-de-galaxia-abstracta_1920x1080_xtrafondos.com.jpg');
 }
 
 .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 300px;
+  border-radius: 0px 0px 40px 40px;
 }
 .main__title {
   color: white;
   font-size: 25px;
+}
+.categories__title{
+  color: white;
+  font-size: 16px;
+position: absolute;
+padding-left: 30px;
+width: 100%;
 }
 .input {
   background-color: rgba(255, 255, 255, 0.1);
@@ -101,3 +113,25 @@ body {
  .carousel-item:hover .carousel-item__details{
     opacity: 1;
  }
+ .carousel::-webkit-scrollbar {
+  width: 2px;    
+  height:20px;    
+
+}
+
+
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #260764;
+  width: 2px;
+  height:20px;  
+    border-radius: 20px;}
+    @media only screen and (max-width:600px)
+    {
+
+      .carousel::-webkit-scrollbar {
+        width: 2px;    
+        height:20px;    
+      display: none;
+      }
+    }
